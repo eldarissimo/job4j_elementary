@@ -10,11 +10,11 @@ public class Converter {
     }
 
     public static float euroToDollar(float value) {
-        return value * 0.85f;
+        return value * 1.16f;
     }
 
     public static float dollarToEuro(float value) {
-        return value * 1.16f;
+        return value * 0.85f;
     }
 
     public static void main(String[] args) {
