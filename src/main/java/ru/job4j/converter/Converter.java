@@ -2,40 +2,33 @@ package ru.job4j.converter;
 
 public class Converter {
     public static float rubleToEuro(float value) {
-        return value / 70;
+        float rsl = value / 70;
+        return rsl;
     }
-
+    
     public static float rubleToDollar(float value) {
-        return value / 60;
+        float rsl = value / 60;
+        return  rsl;
     }
-
+    
     public static float euroToDollar(float value) {
-        return value * 1.16f;
+        float rsl = value * 1.16f;
+        return rsl;
     }
-
+    
     public static float dollarToEuro(float value) {
-        return value * 0.85f;
+        float rsl = value * 0.85f;
+        return rsl;
     }
 
     public static void main(String[] args) {
-        float in = 140;
-        float expected = 2;
-        float out = Converter.rubleToEuro(in);
-        boolean passed = expected == out;
-        System.out.println("140 rubles are 2. Test result: " + passed);
-        in = 120;
-        out = Converter.rubleToDollar(in);
-        passed = expected == out;
-        System.out.println("120 rubles are 2. Test result: " + passed);
-        in = 100;
-        expected = 116;
-        out = Converter.dollarToEuro(in);
-        passed = expected == out;
-        System.out.println("100 euro are 116. Test result: " + passed);
-        expected = 85;
-        out = Converter.euroToDollar(in);
-        passed = expected == out;
-        System.out.println("100 euro are 85. Test result: " + passed);
+        float euro = Converter.rubleToEuro(140);
+        System.out.println("140 rubles are " + euro + " euro.");
+        float dollar = Converter.rubleToDollar(120);
+        System.out.println("120 rubles are " + dollar + " dollars.");
+        dollar = Converter.euroToDollar(20);
+        System.out.println("15 euro are " + dollar + " dollars.");
+        euro = Converter.dollarToEuro(15);
+        System.out.println("20 dollars are " + euro + " euro.");
     }
-
 }
