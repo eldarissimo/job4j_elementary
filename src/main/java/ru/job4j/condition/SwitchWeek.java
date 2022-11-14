@@ -4,39 +4,31 @@ public class SwitchWeek {
     public static String nameOfDay(int day) {
         String name;
         switch (day) {
-            case 1:
+            case 1 :
                 name = "Понедельник";
                 break;
-            case 2:
+            case 2 :
                 name = "Вторник";
                 break;
-            case 3:
+            case 3 :
                 name = "Среда";
                 break;
-            case 4:
+            case 4 :
                 name = "Четверг";
                 break;
-            case 5:
+            case 5 :
                 name = "Пятница";
                 break;
-            case 6:
+            case 6 :
                 name = "Суббота";
                 break;
-            case 7:
+            case 7 :
                 name = "Воскресенье";
                 break;
             default:
                 name = "Ошибка";
                 break;
-
         }
         return name;
-    }
-
-    public static void main(String[] args) {
-        String result = SwitchWeek.nameOfDay(2);
-        System.out.println(result);
-        result = SwitchWeek.nameOfDay(10);
-        System.out.println(result);
     }
 }
