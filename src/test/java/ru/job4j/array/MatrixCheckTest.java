@@ -29,7 +29,7 @@ public class MatrixCheckTest {
     }
 
     @Test
-    public void whenHasMonoHorizontal2ButFalse() {
+    public void whenHas2MonoHorizontalButFalse() {
         char[][] input = {
                 {'X', 'X', 'X'},
                 {'X', 'X', 'X'},
