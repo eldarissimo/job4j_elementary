@@ -24,7 +24,7 @@ public class ConverterTest {
     }
 
     @Test
-    public void euroToDollar() {
+    public void whenConvert100EuroThen116Dlr() {
         float in = 100;
         float expected = 116;
         float out = Converter.euroToDollar(in);
