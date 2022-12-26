@@ -2,8 +2,8 @@ package ru.job4j.condition;
 
 public class Max {
     public static int max(int left, int right) {
-        int comparis = left > right ? left : right;
-        return comparis;
+        int comparison = left > right ? left : right;
+        return comparison;
     }
 
     public static void main(String[] args) {

@@ -9,7 +9,7 @@ public class MathFunction {
         return first * second;
     }
 
-    public static double substraction(double first, double second) {
+    public static double subtraction(double first, double second) {
         return second - first;
     }
 
